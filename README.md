@@ -1,9 +1,9 @@
-# Luma Try
+# Try Luma
 
 The release home for **Try Luma** on macOS, Windows and Linux. Try Luma
 Desktop, Tablet and Mobile locally, with persistent workspaces and snapshots.
 
-![Luma Tester in Try mode, running Luma Desktop with Photos open](assets/luma-tester-try.webp)
+![Try Luma in Try mode, running Luma Desktop with Photos open](assets/luma-tester-try.webp)
 
 The app downloads OS images when needed. One x86-64 ISO and one ARM64 ISO serve
 all three experiences. OS downloads stay in Luma's download channel; application
