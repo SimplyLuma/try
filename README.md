@@ -9,6 +9,17 @@ The app downloads OS images when needed. One x86-64 ISO and one ARM64 ISO serve
 all three experiences. OS downloads stay in Luma's download channel; application
 packages belong in this repository's GitHub Releases.
 
+## Download
+
+[Try Luma 0.7.3 preview](https://github.com/SimplyLuma/try/releases/tag/v0.7.3)
+
+- [macOS Apple silicon](https://github.com/SimplyLuma/try/releases/download/v0.7.3/Try.Luma-0.7.3-macos-arm64.dmg)
+- [Windows x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.3/Try-Luma-0.7.3-windows-x86_64.zip)
+- [Linux x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.3/Try-Luma-0.7.3-linux-x86_64.AppImage)
+
+macOS packages are ad-hoc signed and not notarized. Windows packages are unsigned.
+Checksums and corresponding source are attached to the release.
+
 ## Source and builds
 
 The application and shared LumaUI implementation are maintained together in
