@@ -1,0 +1,7 @@
+*.AppImage
+*.dmg
+*.zip
+*.iso
+*.qcow2
+__pycache__/
+tasks/
