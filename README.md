@@ -1,6 +1,6 @@
 # Luma Try
 
-The release home for **Luma Tester** on macOS, Windows and Linux. Try Luma
+The release home for **Try Luma** on macOS, Windows and Linux. Try Luma
 Desktop, Tablet and Mobile locally, with persistent workspaces and snapshots.
 
 ![Luma Tester in Try mode, running Luma Desktop with Photos open](assets/luma-tester-try.webp)
