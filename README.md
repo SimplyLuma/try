@@ -29,8 +29,8 @@ artifact IDs and checksums offered under **Installation media**. It contains
 at most one image per CPU architecture. Older downloads and unapproved future
 nightlies are not offered automatically. Existing local workspaces remain usable.
 
-The channel is initially empty while the two release images finish validation.
-Approving their final checksums enables them without rebuilding the application.
+The channel approves the validated October 27 x86-64 and ARM64 installation
+images. Each image supports Desktop, Tablet and Mobile.
 See [the channel contract](channels/README.md).
 
 ## Application updates

@@ -23,5 +23,6 @@ authorized OS release infrastructure. Then commit the two actual IDs/digests and
 increment the generation. Do not insert placeholder digests or infer approval
 from dates, filenames, “latest” or catalog ordering.
 
-The currently empty generation is deliberate: the release images are not yet
-ready. Existing local imports and workspaces remain available in the app.
+Generation 3 approves the qualified October 27 x86-64 and ARM64 media after
+complete public-byte and signed-listing verification. Existing local imports
+and workspaces remain available in the app.
