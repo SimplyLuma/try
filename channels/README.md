@@ -1,6 +1,6 @@
 # Approved preview images
 
-`images.json` is Try Luma’s curated download policy. Generation 4 offers one
+`images.json` is Try Luma’s curated download policy. Generation 5 offers one
 prepared x86-64 VM disk and one prepared ARM64 VM disk. Each supports Desktop,
 Tablet and Mobile through the OS experience flag. Both files have been booted
 natively and their complete public download bodies verified against SHA-256.
