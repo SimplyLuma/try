@@ -12,20 +12,21 @@ belong in this repository’s GitHub Releases.
 
 ## Download
 
-[Try Luma 0.7.4 preview](https://github.com/SimplyLuma/try/releases/tag/v0.7.4)
+[Try Luma 0.7.5 preview](https://github.com/SimplyLuma/try/releases/tag/v0.7.5)
 
-- [macOS Apple silicon](https://github.com/SimplyLuma/try/releases/download/v0.7.4/Try.Luma-0.7.4-macos-arm64.dmg)
-- [Windows x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.4/Try-Luma-0.7.4-windows-x86_64.zip)
-- [Linux x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.4/Try-Luma-0.7.4-linux-x86_64.AppImage)
+- [macOS Apple silicon](https://github.com/SimplyLuma/try/releases/download/v0.7.5/Try.Luma-0.7.5-macos-arm64.dmg)
+- [Windows x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.5/Try-Luma-0.7.5-windows-x86_64.zip)
+- [Linux x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.5/Try-Luma-0.7.5-linux-x86_64.AppImage)
 
 The macOS download is Developer ID signed and Apple notarized, with approval
 tickets stapled to the app and disk image. Windows packages are unsigned.
-Checksums and corresponding source are attached to the release.
+Checksums and corresponding source are attached to the release. Mac guest graphics
+use software rendering in this release; Mac GPU acceleration is still in development.
 
 ## Preview login
 
 The sidebar shows the preview credentials in both Try and Developer modes:
-username **luma**, password **TryLuma**, with a Copy Password button. Use this
+username **luma**, password **TryLuma**, with a clickable password that copies to the clipboard. Use this
 password when installing apps or unlocking the preview. Fresh previews disable
 automatic locking and idle sleep. SSH requires a key.
 
