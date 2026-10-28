@@ -1,6 +1,6 @@
 # Try Luma 0.7.6 — website handoff
 
-Update `/try` to **Try Luma 0.7.6**. Use these versioned GitHub links for the download buttons. The release remains a public preview; avoid `/releases/latest/download` because prereleases do not resolve there.
+Update `/try` to **Try Luma 0.7.6**. Keep the website's existing tracked download routes (`/get/app/try/mac`, `/get/app/try/windows`, `/get/app/try/linux`) and update their registered artifact destinations to the versioned GitHub URLs below. Preserve attribution rather than replacing tracked buttons with untracked direct links. The release remains a public preview; avoid `/releases/latest/download` because prereleases do not resolve there.
 
 | Platform | Link | Bytes | SHA256 |
 |---|---|---:|---|
@@ -54,3 +54,9 @@ Register the three app artifacts below in the Hub and publish the signed tester 
 Approved VM channel: https://raw.githubusercontent.com/SimplyLuma/try/main/channels/images.json — generation 7, exactly two current prepared disks. The new image paths are `tester/20261028-ready4/try-luma-aarch64.qcow2` and `tester/20261028-ready4/try-luma-x86_64.qcow2` on `https://media.simplyluma.com/`. The channel contains their exact sizes and digests.
 
 Application source, pinned modified-QEMU source, patch, build recipe and checksums are attached to the release. Existing workspaces and previous releases are preserved.
+
+## Download availability check, October 28
+
+At approximately 19:47–19:51 UTC, anonymous GET requests through the website's actual download routes successfully received file data for the current x86 OS nightly `20261027.4`, ARM OS nightly `20261027.1`, generic/Fairphone Mobile system and boot files, Titan system and boot files, and all three Try application downloads. The Try routes still targeted 0.7.5 during this check; update them to the verified 0.7.6 destinations above. The new 0.7.6 application assets and both ready4 VM disks have also passed complete public-download SHA256 verification.
+
+These checks establish availability, not analytics ingestion or the reason for a low hourly count. For the reported low count, inspect completed-download ingestion, processing delay and source filters across website OS, website Try apps and in-app VM downloads. Exclude QA probes from user counts where possible. No broad download outage was reproduced. The ARM route includes `/get/aarch64/nightly/`; omitting the architecture produces a 404 and is not the route used by the website.
