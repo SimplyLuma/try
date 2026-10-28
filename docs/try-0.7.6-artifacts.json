@@ -1,0 +1,29 @@
+{
+  "version": "0.7.6",
+  "assets": [
+    {
+      "artifact_id": "tester/0.7.6/macos-arm64",
+      "kind": "tester_app",
+      "platform": "macos-arm64",
+      "url": "https://github.com/SimplyLuma/try/releases/download/v0.7.6/Try.Luma-0.7.6-macos-arm64.dmg",
+      "size_bytes": 66600391,
+      "sha256": "8c86526464f74a7c6cbd29a1cd4f75773178965eadadc861f635eea6929b3c0d"
+    },
+    {
+      "artifact_id": "tester/0.7.6/windows-x86_64",
+      "kind": "tester_app",
+      "platform": "windows-x86_64",
+      "url": "https://github.com/SimplyLuma/try/releases/download/v0.7.6/Try-Luma-0.7.6-windows-x86_64.zip",
+      "size_bytes": 267075020,
+      "sha256": "6710a1d0cbd317e41e1822218894aa055f65cfba9d3c8614a7ff3fc6660ca7c2"
+    },
+    {
+      "artifact_id": "tester/0.7.6/linux-x86_64",
+      "kind": "tester_app",
+      "platform": "linux-x86_64",
+      "url": "https://github.com/SimplyLuma/try/releases/download/v0.7.6/Try-Luma-0.7.6-linux-x86_64.AppImage",
+      "size_bytes": 295631352,
+      "sha256": "54872a8672416002c9a867340621d1a79830aada36d42f304e32c5eaacc328c4"
+    }
+  ]
+}

@@ -12,16 +12,16 @@ belong in this repository’s GitHub Releases.
 
 ## Download
 
-[Try Luma 0.7.5 preview](https://github.com/SimplyLuma/try/releases/tag/v0.7.5)
+[Try Luma 0.7.6 preview](https://github.com/SimplyLuma/try/releases/tag/v0.7.6)
 
-- [macOS Apple silicon](https://github.com/SimplyLuma/try/releases/download/v0.7.5/Try.Luma-0.7.5-macos-arm64.dmg)
-- [Windows x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.5/Try-Luma-0.7.5-windows-x86_64.zip)
-- [Linux x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.5/Try-Luma-0.7.5-linux-x86_64.AppImage)
+- [macOS Apple silicon](https://github.com/SimplyLuma/try/releases/download/v0.7.6/Try.Luma-0.7.6-macos-arm64.dmg)
+- [Windows x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.6/Try-Luma-0.7.6-windows-x86_64.zip)
+- [Linux x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.6/Try-Luma-0.7.6-linux-x86_64.AppImage)
 
 The macOS download is Developer ID signed and Apple notarized, with approval
 tickets stapled to the app and disk image. Windows packages are unsigned.
 Checksums and corresponding source are attached to the release. Mac guest graphics
-use software rendering in this release; Mac GPU acceleration is still in development.
+use software rendering with complete-frame streaming and improved display refresh.
 
 ## Preview login
 
