@@ -1,28 +1,22 @@
-# Approved installation media
+# Approved preview images
 
-`images.json` is the explicit image-selection policy used by Tester. It is
-separate from the Hub's historical download catalog. Read it through the canonical
-HTTPS URL in this repository; it contains no download URLs or executable commands.
-The Hub remains responsible for artifact metadata and signed OS indexes.
+`images.json` is Try Luma’s curated download policy. Generation 4 offers one
+prepared x86-64 VM disk and one prepared ARM64 VM disk. Each supports Desktop,
+Tablet and Mobile through the OS experience flag. Both files have been booted
+natively and their complete public download bodies verified against SHA-256.
 
-Each approval has exactly `artifact_id` and `sha256`. The artifact ID has the
-form `os/CHANNEL/BUILD_ID/ARCH`, using `nightly`, `beta` or `stable` and `x86_64`
-or `aarch64`. SHA-256 is the complete ISO body's lowercase 64-character digest.
-Both fields must match the Hub catalog before an ISO appears in Installation media.
+`workspaces` contains at most one `tester_image` per architecture, with its
+immutable HTTPS URL, complete size and SHA-256, and a validated `tester_profile`.
+Profiles select the restricted `luma-unified-v1` boot protocol; they contain no
+executable setup commands. New clients offer these prepared disks instead of
+installation media, including when the Hub catalog is unavailable.
 
-Keep zero, one or two approvals, with at most one per architecture. Replace an
-old approval when approving its successor. Do not append an archive of old builds.
-Increase the positive integer `generation` for every policy change. Clients
-ignore older generations and retain their last valid policy when offline.
-An empty newer generation withdraws all offered installation media without
-deleting anyone's installed workspaces or cached images.
+The legacy `images` approvals retain one installer ISO per architecture for
+older-client compatibility. IDs and digests must match the Hub catalog.
+Manually imported images and saved local workspaces remain available.
 
-Before approval, verify the exact source/component receipts, complete ISO digest
-and native boot evidence. Publish the matching immutable artifact through the
-authorized OS release infrastructure. Then commit the two actual IDs/digests and
-increment the generation. Do not insert placeholder digests or infer approval
-from dates, filenames, “latest” or catalog ordering.
-
-Generation 3 approves the qualified October 27 x86-64 and ARM64 media after
-complete public-byte and signed-listing verification. Existing local imports
-and workspaces remain available in the app.
+Increase `generation` for each policy change. Clients reject stale generations
+and retain their last valid policy offline. Approve new artifacts only after
+source checks, native boot qualification and complete public-byte verification.
+Never derive approval from filenames, dates or catalog ordering. Keep generated
+VM disks and application packages out of Git.
