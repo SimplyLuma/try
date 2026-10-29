@@ -12,11 +12,12 @@ belong in this repository’s GitHub Releases.
 
 ## Download
 
-[Try Luma 0.7.6 preview](https://github.com/SimplyLuma/try/releases/tag/v0.7.6)
+Latest previews: [Linux 0.7.7](https://github.com/SimplyLuma/try/releases/tag/v0.7.7),
+[macOS and Windows 0.7.6](https://github.com/SimplyLuma/try/releases/tag/v0.7.6).
 
 - [macOS Apple silicon](https://github.com/SimplyLuma/try/releases/download/v0.7.6/Try.Luma-0.7.6-macos-arm64.dmg)
 - [Windows x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.6/Try-Luma-0.7.6-windows-x86_64.zip)
-- [Linux x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.6/Try-Luma-0.7.6-linux-x86_64.AppImage)
+- [Linux x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.7/Try-Luma-0.7.7-linux-x86_64.AppImage)
 
 The macOS download is Developer ID signed and Apple notarized, with approval
 tickets stapled to the app and disk image. Windows packages are unsigned.
@@ -47,7 +48,7 @@ and multi-gigabyte OS images must not be committed to Git.
 
 [`channels/images.json`](channels/images.json) approves exactly one prepared
 preview image per CPU architecture. Both support Desktop, Tablet and Mobile.
-Generation 5 includes the complete sizes, SHA-256 checksums and immutable URLs
+Generation 7 includes the complete sizes, SHA-256 checksums and immutable URLs
 of the verified direct-boot images. Unapproved historical downloads are hidden;
 local imports and saved workspaces remain available. Legacy ISO approvals are
 retained for older-client compatibility. See [the channel contract](channels/README.md).
