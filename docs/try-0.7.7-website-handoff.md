@@ -40,7 +40,7 @@ Windows 0.7.7 adds the downloaded-image trash action, confirmation and cancellat
 }
 ```
 
-Mac 0.7.7 passed the native image-picker deletion/cancel/confirmation checks, all 11 storage tests, one-click Desktop startup, password sidebar checks and hardened QEMU accelerator control checks. The final downloaded DMG and installed app passed Gatekeeper with quarantine applied. This update preserves the existing Mac graphics implementation.
+Mac 0.7.7 passed the native image-picker deletion/cancel/confirmation checks, all 11 storage tests, the Desktop default and one-click UI checks, password sidebar checks and hardened QEMU accelerator control checks. The final downloaded DMG and installed app passed Gatekeeper with quarantine applied. This update preserves the existing Mac graphics implementation.
 
 ```json
 {
