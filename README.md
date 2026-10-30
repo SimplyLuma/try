@@ -12,10 +12,9 @@ belong in this repository’s GitHub Releases.
 
 ## Download
 
-Latest previews: [Linux and Windows 0.7.7](https://github.com/SimplyLuma/try/releases/tag/v0.7.7),
-[macOS 0.7.6](https://github.com/SimplyLuma/try/releases/tag/v0.7.6).
+Latest preview: [Try Luma 0.7.7](https://github.com/SimplyLuma/try/releases/tag/v0.7.7).
 
-- [macOS Apple silicon](https://github.com/SimplyLuma/try/releases/download/v0.7.6/Try.Luma-0.7.6-macos-arm64.dmg)
+- [macOS Apple silicon](https://github.com/SimplyLuma/try/releases/download/v0.7.7/Try.Luma-0.7.7-macos-arm64.dmg)
 - [Windows x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.7/Try-Luma-0.7.7-windows-x86_64.zip)
 - [Linux x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.7/Try-Luma-0.7.7-linux-x86_64.AppImage)
 
@@ -23,6 +22,8 @@ The macOS download is Developer ID signed and Apple notarized, with approval
 tickets stapled to the app and disk image. Windows packages are unsigned.
 Checksums and corresponding source are attached to the release. Mac guest graphics
 use software rendering with complete-frame streaming and improved display refresh.
+
+Downloaded images can be removed from the action bar’s image picker using the trash button. Confirming deletion also removes any saved workspace and snapshots listed in the confirmation. Active images are protected; original files imported from outside Try Luma are preserved.
 
 ## Preview login
 
