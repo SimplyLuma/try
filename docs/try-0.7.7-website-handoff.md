@@ -1,20 +1,20 @@
-# Try Luma 0.7.7 — Linux website and Hub handoff
+# Try Luma 0.7.7 — website and Hub handoff
 
-Update the **Linux** Try Luma download to 0.7.7. macOS and Windows keep their existing 0.7.6 packages and links. The prepared OS image channel remains generation 7, with one ARM64 and one x86-64 disk serving Desktop, Tablet and Mobile.
+Update the **Linux and Windows** Try Luma downloads to 0.7.7. macOS keeps its existing signed, notarized 0.7.6 package until the 0.7.7 notarization finishes. The prepared OS image channel remains generation 7, with one ARM64 and one x86-64 disk serving Desktop, Tablet and Mobile.
 
-Keep the website's tracked `/get/app/try/linux` route and change its registered artifact destination to the Linux URL below. Preserve attribution. A GitHub release does not update the website route or the signed Hub update index automatically. These releases are previews; do not use `/releases/latest/download`.
+Keep the website's tracked `/get/app/try/linux` and `/get/app/try/windows` routes and change their registered artifact destinations to the URLs below. Preserve attribution. A GitHub release does not update the website route or the signed Hub update index automatically. These releases are previews; do not use `/releases/latest/download`.
 
 | Platform | Version | Download | Bytes | SHA256 |
 |---|---|---|---:|---|
 | Linux x86-64 | 0.7.7 | [AppImage](https://github.com/SimplyLuma/try/releases/download/v0.7.7/Try-Luma-0.7.7-linux-x86_64.AppImage) | 298,301,944 | `7ef43171375d5e628f03abebbcbf42411b81e16820ffab63587f5c559c66222b` |
 | macOS Apple silicon | 0.7.6 | [DMG](https://github.com/SimplyLuma/try/releases/download/v0.7.6/Try.Luma-0.7.6-macos-arm64.dmg) | 66,600,391 | `8c86526464f74a7c6cbd29a1cd4f75773178965eadadc861f635eea6929b3c0d` |
-| Windows x86-64 | 0.7.6 | [ZIP](https://github.com/SimplyLuma/try/releases/download/v0.7.6/Try-Luma-0.7.6-windows-x86_64.zip) | 267,075,020 | `6710a1d0cbd317e41e1822218894aa055f65cfba9d3c8614a7ff3fc6660ca7c2` |
+| Windows x86-64 | 0.7.7 | [ZIP](https://github.com/SimplyLuma/try/releases/download/v0.7.7/Try-Luma-0.7.7-windows-x86_64.zip) | 267,078,718 | `120337eb4eeccb7cccf13a1597e6b932205e2a2fd6d7a998850637d7932140c9` |
 
 Release: [Try Luma 0.7.7](https://github.com/SimplyLuma/try/releases/tag/v0.7.7).
 
 Suggested Linux release text: “Fix graphics-library compatibility in the Linux AppImage. Add downloaded-image deletion and fix launcher display initialization.” Avoid claims of universal GPU performance improvements: the package was checked for private graphics-library resolution, older Ubuntu userspace, startup and fallback; full hardware performance depends on the host.
 
-Register this artifact in the Hub download center and include it in the signed Tester release index for Linux. Keep the Mac and Windows entries at their existing versions. Preserve website/tester source attribution. Production packages send `tester` attribution; QA previews use `test`.
+Register both new artifacts in the Hub download center and include them in the signed Tester release index for their respective platforms. Keep the Mac entry at its existing version. Preserve website/tester source attribution. Production packages send `tester` attribution; QA previews use `test`.
 
 ```json
 {
@@ -24,6 +24,19 @@ Register this artifact in the Hub download center and include it in the signed T
   "url": "https://github.com/SimplyLuma/try/releases/download/v0.7.7/Try-Luma-0.7.7-linux-x86_64.AppImage",
   "size_bytes": 298301944,
   "sha256": "7ef43171375d5e628f03abebbcbf42411b81e16820ffab63587f5c559c66222b"
+}
+```
+
+Windows 0.7.7 adds the downloaded-image trash action, confirmation and cancellation. The actual native Windows picker and all 11 storage tests passed, including workspace locks and real qcow2 snapshots. Its published ZIP was downloaded in full and its SHA-256 verified. Windows runtime binaries are unchanged from the previously qualified runtime.
+
+```json
+{
+  "artifact_id": "tester/0.7.7/windows-x86_64",
+  "kind": "tester_app",
+  "platform": "windows-x86_64",
+  "url": "https://github.com/SimplyLuma/try/releases/download/v0.7.7/Try-Luma-0.7.7-windows-x86_64.zip",
+  "size_bytes": 267078718,
+  "sha256": "120337eb4eeccb7cccf13a1597e6b932205e2a2fd6d7a998850637d7932140c9"
 }
 ```
 
