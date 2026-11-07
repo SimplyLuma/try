@@ -1,22 +1,22 @@
 # Try Luma
 
 The release home for **Try Luma** on macOS, Windows and Linux. Try Luma
-Desktop, Tablet and Mobile locally, with persistent workspaces and snapshots.
+Desktop, Tablet, Mobile and TV locally, with persistent workspaces and snapshots.
 
 ![Try Luma in Try mode, running Luma Desktop with Photos open](assets/luma-tester-try.webp)
 
 The app downloads a prepared VM image when needed and boots directly into Luma
-with automatic login. One x86-64 image and one ARM64 image serve Desktop, Tablet
-and Mobile. Images are hosted on Luma’s download server; application packages
+with automatic login. One x86-64 image and one ARM64 image serve Desktop, Tablet,
+Mobile and TV. Images are hosted on Luma’s download server; application packages
 belong in this repository’s GitHub Releases.
 
 ## Download
 
-Latest preview: [Try Luma 0.7.7](https://github.com/SimplyLuma/try/releases/tag/v0.7.7).
+Latest preview: [Try Luma 0.7.8](https://github.com/SimplyLuma/try/releases/tag/v0.7.8).
 
-- [macOS Apple silicon](https://github.com/SimplyLuma/try/releases/download/v0.7.7/Try.Luma-0.7.7-macos-arm64.dmg)
-- [Windows x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.7/Try-Luma-0.7.7-windows-x86_64.zip)
-- [Linux x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.7/Try-Luma-0.7.7-linux-x86_64.AppImage)
+- [macOS Apple silicon](https://github.com/SimplyLuma/try/releases/download/v0.7.8/Try.Luma-0.7.8-macos-arm64.dmg)
+- [Windows x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.8/Try-Luma-0.7.8-windows-x86_64.zip)
+- [Linux x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.8/Try-Luma-0.7.8-linux-x86_64.AppImage)
 
 The macOS download is Developer ID signed and Apple notarized, with approval
 tickets stapled to the app and disk image. Windows packages are unsigned.
@@ -48,8 +48,8 @@ and multi-gigabyte OS images must not be committed to Git.
 ## Image channel
 
 [`channels/images.json`](channels/images.json) approves exactly one prepared
-preview image per CPU architecture. Both support Desktop, Tablet and Mobile.
-Generation 7 includes the complete sizes, SHA-256 checksums and immutable URLs
+preview image per CPU architecture. Both support Desktop, Tablet, Mobile and TV.
+Generation 8 includes the complete sizes, SHA-256 checksums and immutable URLs
 of the verified direct-boot images. Unapproved historical downloads are hidden;
 local imports and saved workspaces remain available. Legacy ISO approvals are
 retained for older-client compatibility. See [the channel contract](channels/README.md).
