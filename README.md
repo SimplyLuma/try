@@ -14,7 +14,7 @@ belong in this repository’s GitHub Releases.
 
 Latest preview: [Try Luma 0.7.9](https://github.com/SimplyLuma/try/releases/tag/v0.7.9).
 
-- [macOS Apple silicon](https://github.com/SimplyLuma/try/releases/download/v0.7.8/Try.Luma-0.7.8-macos-arm64.dmg)
+- [macOS Apple silicon](https://github.com/SimplyLuma/try/releases/download/v0.7.9/Try.Luma-0.7.9-macos-arm64.dmg)
 - [Windows x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.9/Try-Luma-0.7.9-windows-x86_64.zip)
 - [Linux x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.9/Try-Luma-0.7.9-linux-x86_64.AppImage)
 
