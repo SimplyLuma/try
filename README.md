@@ -12,11 +12,11 @@ belong in this repository’s GitHub Releases.
 
 ## Download
 
-Latest preview: [Try Luma 0.7.8](https://github.com/SimplyLuma/try/releases/tag/v0.7.8).
+Latest preview: [Try Luma 0.7.9](https://github.com/SimplyLuma/try/releases/tag/v0.7.9).
 
 - [macOS Apple silicon](https://github.com/SimplyLuma/try/releases/download/v0.7.8/Try.Luma-0.7.8-macos-arm64.dmg)
-- [Windows x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.8/Try-Luma-0.7.8-windows-x86_64.zip)
-- [Linux x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.8/Try-Luma-0.7.8-linux-x86_64.AppImage)
+- [Windows x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.9/Try-Luma-0.7.9-windows-x86_64.zip)
+- [Linux x86-64](https://github.com/SimplyLuma/try/releases/download/v0.7.9/Try-Luma-0.7.9-linux-x86_64.AppImage)
 
 The macOS download is Developer ID signed and Apple notarized, with approval
 tickets stapled to the app and disk image. Windows packages are unsigned.
